@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap");
+
+:root {
+  --primary-color: #8d49e4;
+  --primary-dark-color: #733dbb;
+  --primary-darker-color: #2e1c44;
+  --body-bg: #25132e;
+  --header-bg: rgba(26, 13, 32, 1);
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  color: white;
+  /* background-color: var(--body-bg); */
+  background: linear-gradient(180deg, #1a0e20 0%, #010013 100%);
+}
+
+.header-bg {
+  background-color: var(--header-bg);
+}
+.bg-primary-darker {
+  background-color: var(--primary-darker-color);
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+@media screen and (max-width: 480px) {
+  h1,
+  .h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/************************* Navigation  *************************/
+.navbar-brand,
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.dropdown-item {
+  color: white;
+}
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--primary-color) !important;
+}
+.navbar-brand:hover,
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(234, 234, 234);
+}
+.navbar-toggler {
+  box-shadow: none !important;
+  border: none;
+}
+
+/************************* Dropdown  *************************/
+.dropdown-toggle::after {
+  margin-left: 0.5em;
+  vertical-align: 0.2em;
+}
+.dropdown-menu {
+  border: 1px solid #542b89;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent;
+  color: white;
+}
+/************************* End Dropdown  *************************/
+/************************* End Navigation  *************************/

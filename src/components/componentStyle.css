@@ -1,0 +1,123 @@
+.background-image-basic {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+
+
+/************************* Button *************************/
+.btn.btn-success {
+  border-radius: 30px !important;
+  padding: 0.5rem 1rem !important;
+  background-color: var(--primary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.btn.btn-success:hover,
+.btn.btn-success:active {
+  background-color: var(--primary-dark-color) !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.btn.btn-outline-success {
+  border-radius: 30px !important;
+  padding: 0.5rem 1rem !important;
+  color: white !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.btn.btn-outline-success:hover,
+.btn.btn-outline-success:active {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+.btn svg {
+  vertical-align: -3px;
+}
+
+.nav-btn-custom {
+  border: 1px solid white !important;
+  border-radius: 50% !important;
+  font-size: 1.5rem !important;
+  padding: 0.5rem 1rem !important;
+}
+.nav-btn-custom:hover {
+  background-color: white !important;
+}
+.nav-btn-custom svg {
+  color: white;
+}
+.nav-btn-custom:hover svg {
+  color: var(--body-bg);
+}
+
+.absolute-navs {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/************************* End Button *************************/
+
+/***** Blogs *****/
+.blog-height {
+  height: 550px;
+}
+.absolute-blogs-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  background: linear-gradient(
+    0deg,
+    #000000 -12.11%,
+    rgba(0, 0, 0, 0.005) 83.76%
+  );
+}
+/***** End Blogs *****/
+
+/***** ToolSets *****/
+.tool-img {
+  width: 50%;
+  margin: auto;
+}
+.tool-img img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+.swiper {
+  --swiper-navigation-size: 26px !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+/***** End ToolSets *****/
+
+/***** Hiring *****/
+.position-card {
+  position: relative;
+  background: rgba(30, 26, 43, 1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.position-card .absolute-gradient {
+  background: linear-gradient(90.61deg, #5f01bd 5%, #3c0475 115.73%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1%;
+  height: 100%;
+}
+
+
+/***** End Hiring *****/
+
+.slidee {
+  background-image: url("../assets/Process/bg-process.png");
+}

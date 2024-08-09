@@ -1,0 +1,31 @@
+.bg-hero-service-banner {
+  background-image: url("../assets/HeroSection/hero-service.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bg-team {
+  background-image: url("../assets/HeroSection/banner-bg-1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.bg-banner-card {
+  background-image: url("../assets/HeroSection/banner-bg-2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-class {
+    margin: 0 -0.75rem;
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  background: linear-gradient(90.61deg, #5f01bd 5%, #3c0475 115.73%);
+  margin-left: 3px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.form {
+  max-width: 75%;
+}
+.bg-form {
+  background-color: white;
+  color: black;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin: auto;
+    border-radius: 4px;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .bg-form {
+    border-radius: 0.5rem; margin-top: 1rem;
+  }
+}
