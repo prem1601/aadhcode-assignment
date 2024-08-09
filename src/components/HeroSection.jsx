@@ -90,7 +90,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <div className="col-md-4 col-6 px-md-2 bg-banner-card text-black d-none d-md-block">
+        <div className="col-md-4 col-6  bg-banner-card text-black d-none d-md-block">
           <div className=" py-4">
             <div className="row justify-content-between px-5">
               <div className="col-md-4 col-12 text-start">
