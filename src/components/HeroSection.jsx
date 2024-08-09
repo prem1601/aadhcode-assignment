@@ -46,7 +46,7 @@ const HeroSection = () => {
         </div>
 
         {/* Service Banner  */}
-        <div className="col-md-4 col-12 mx-auto bg-hero-service-banner mobile-class p-4 position-relative">
+        <div className="col-md-4 col-12 mx-auto m-md-0 bg-hero-service-banner mobile-class p-4 position-relative">
           <div className="d-flex align-items-center mb-3">
             <img src={HeroHamburgerImg} alt="" className="me-3" />
             <h4 className="mb-1">Our Services</h4>
