@@ -35,7 +35,7 @@ const Hiring = () => {
       {/* Content  */}
       {openPositions.map((position) => (
         <div className="position-card my-4" key={position.id}>
-          <div className="d-flex flex-wrap justify-content-between align-items-center p-5">
+          <div className="d-flex flex-wrap justify-content-between align-items-center p-md-5 px-3 py-4">
             <div>
               <h5 className="mb-1">
                 {position.name}{" "}

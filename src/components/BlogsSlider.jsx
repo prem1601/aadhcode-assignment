@@ -55,9 +55,12 @@ const BlogsSlider = () => {
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={20}
-        slidesPerView={3}
-        // navigation={{ clickable: true }}
-        className="py- d-flex flex-column-reverse"
+        breakpoints={{
+          480: { slidesPerView: 1 },
+          767: { slidesPerView: 3 },
+        }}
+        pagination={{ clickable: true }}
+        className="py-5 d-flex flex-column-reverse"
       >
         {blogs.map(({ id, image, date, readTime, title }) => (
           <SwiperSlide key={id}>
@@ -80,14 +83,14 @@ const BlogsSlider = () => {
               <h2>Explore insights through our knowledge-share blogs</h2>
             </div>
           </div>
-          <div className="absolute-navs">
+          <div className="absolute-navs d-none d-md-block">
             <SwiperNavButtons />
           </div>
         </div>
       </Swiper>
 
       {/* View All */}
-      <div className="mt-4 text-center">
+      <div className="mt-md-4 mt-2 text-center">
         <SecondaryButton
           name={"VIEW ALL"}
           onClick={() => {

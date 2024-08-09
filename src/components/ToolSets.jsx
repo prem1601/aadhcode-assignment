@@ -23,7 +23,7 @@ const tools = [
 
 const ToolSets = () => {
   return (
-    <div className="container py-5">
+    <div className="container pb-5 py-md-5">
       <div className="my-5">
         <p className="small mb-2">TESTIMONIALS</p>
         <h2>Hear from our valued partners</h2>
@@ -31,7 +31,10 @@ const ToolSets = () => {
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={30}
-        slidesPerView={4}
+        breakpoints={{
+          480: { slidesPerView: 1 },
+          767: { slidesPerView: 4 },
+        }}
         navigation={{ clickable: true }}
         className="py-4 border-top border-bottom toolsets"
       >

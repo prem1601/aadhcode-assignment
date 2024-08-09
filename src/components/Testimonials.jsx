@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
+import './componentStyle.css'
+
 import TestimonialImg from "../assets/Testimonials/owner.png";
 import { SwiperNavButtons } from "./SwiperNavButtons";
 
@@ -53,10 +55,13 @@ const Testimonials = () => {
       <Swiper
         modules={[Navigation, Autoplay, Pagination]}
         spaceBetween={30}
-        slidesPerView={2}
-        // navigation={{ clickable: true }}
+        pagination={{ clickable: true }}
         centeredSlides={true}
-        className="py-5 d-flex flex-column-reverse"
+        breakpoints={{
+          480: { slidesPerView: 1 },
+          767: { slidesPerView: 2 },
+        }}
+        className="py-5 px-3 px-md-0 d-flex flex-column-reverse testimonials"
       >
         {testimonials.map(({ id, image, name, position, text, title }) => (
           <SwiperSlide key={id}>
@@ -84,7 +89,9 @@ const Testimonials = () => {
               <p className="small mb-2">TESTIMONIALS</p>
               <h2>Hear from our valued partners</h2>
             </div>
-            <SwiperNavButtons />
+            <div className="d-none d-md-block">
+              <SwiperNavButtons />
+            </div>
           </div>
         </div>
       </Swiper>

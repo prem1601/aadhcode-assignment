@@ -6,8 +6,6 @@
   overflow: hidden;
 }
 
-
-
 /************************* Button *************************/
 .btn.btn-success {
   border-radius: 30px !important;
@@ -77,6 +75,12 @@
     rgba(0, 0, 0, 0.005) 83.76%
   );
 }
+
+@media screen and (max-width: 480px) {
+  .blog-height{
+    height: 350px;
+  }
+}
 /***** End Blogs *****/
 
 /***** ToolSets *****/
@@ -115,9 +119,23 @@
   height: 100%;
 }
 
-
 /***** End Hiring *****/
 
 .slidee {
   background-image: url("../assets/Process/bg-process.png");
 }
+
+/***** Testimonials *****/
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 0.85rem !important;
+  height: 0.85rem !important;
+  background: var(--primary-color);
+  margin: auto 0.35rem !important;
+}
+
+@media screen and (min-width: 480px) {
+  .swiper-pagination {
+    display: none;
+  }
+}
+/***** End Testimonials *****/
