@@ -13,7 +13,7 @@ const Footer = () => {
                 <img src={Logo} alt="" className="" />
               </div>
               <div>
-                <p className="small mb-2">TESTIMONIALS</p>
+                <p className="small mb-2">GET IN TOUCH</p>
                 <h1>Have a project?</h1>
                 <h1>We would love to help</h1>
               </div>
